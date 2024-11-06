@@ -1,0 +1,12 @@
+# .github/workflows/call-semantic-release.yml
+name: Call Central Semantic Release Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-semantic-release:
+    uses: organisation/repo-central/.github/workflows/semantic-release.yml@main
+    with:
+      node_version: '18'
+      github_token: ${{ secrets.GH_TOKEN }}
