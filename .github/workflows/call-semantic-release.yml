@@ -6,7 +6,7 @@ on:
 
 jobs:
   call-semantic-release:
-    uses: organisation/repo-central/.github/workflows/semantic-release.yml@main
+    uses: l-s-a-s-h-a-l/workflows/blob/main/.github/workflows/semantic-release.yml@main
     with:
       node_version: '18'
       github_token: ${{ secrets.GH_TOKEN }}
